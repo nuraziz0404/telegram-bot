@@ -24,7 +24,7 @@ bot.getMe().then((e) => {
   console.log("[BOT] telegram bot started (https://t.me/%s)", e.username);
 });
 
-bot.onText(/\/uptime (.+)/i, (msg, match) => {
+bot.onText(/\/uptime(.*)/i, (msg, match) => {
   bot.sendMessage(msg.chat.id, `uptime: ${uptime()}`);
 });
 
