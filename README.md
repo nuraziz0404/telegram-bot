@@ -5,6 +5,7 @@ this is simple telegram bot using Typescript
 ## Requirements
 
  - [Nodejs](https://nodejs.org)
+ - [Typescript](https://www.typescriptlang.org/)
  - [Telegram BOT token](https://t.me/BotFather)
 
 ## Usage
