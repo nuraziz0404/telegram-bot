@@ -51,6 +51,7 @@ app.get("/", (req, res) => {
   res.send("hello world");
 });
 
-app.listen(parseInt(process.env.PORT), "0.0.0.0", () => {
-  console.log("Express running on http://localhost:%s", process.env.PORT);
+const port = parseInt(process.env.PORT) || 5000;
+app.listen(port, "0.0.0.0", () => {
+  console.log("Express running on http://localhost:%s", port);
 });
